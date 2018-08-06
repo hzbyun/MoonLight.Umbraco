@@ -1,0 +1,26 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Monday, 6 August 2018 6:53:12 PM
+   Source : C:\Users\James\Documents\GitHub\MoonLight.Umbraco\MoonLight.Umbraco\Umbraco\
+     Dest : C:\Users\James\Documents\GitHub\MoonLight.Umbraco\MoonLight.Umbraco\App_Data\NuGetBackup\20180806-185311\Umbraco\
+
+    Files : *.*
+	    
+  Options : *.* /S /E /DCOPY:DA /COPY:DAT /R:1000000 /W:30 
+
+------------------------------------------------------------------------------
+
+	                   0	C:\Users\James\Documents\GitHub\MoonLight.Umbraco\MoonLight.Umbraco\Umbraco\
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :         1         0         0         0         0         0
+   Files :         0         0         0         0         0         0
+   Bytes :         0         0         0         0         0         0
+   Times :   0:00:00   0:00:00                       0:00:00   0:00:00
+   Ended : Monday, 6 August 2018 6:53:12 PM
+
