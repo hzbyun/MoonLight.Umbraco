@@ -1,0 +1,15 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+@using Umbraco.Web
+
+@{
+    var nodeWithCropper = Model.Content.AncestorsOrSelf().First(x => x.HasValue("pageLogo"));
+}
+
+<header id="fh5co-header" role="banner">
+    <div class="container">
+		<div class="header-inner">
+		    <img src="@nodeWithCropper.GetCropUrl("pageLogo", "logoSize1")" alt="page logo"/>
+			@Html.Partial("Navigation")
+		</div>
+	</div>
+</header>
