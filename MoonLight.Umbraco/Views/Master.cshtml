@@ -5,14 +5,14 @@
 }
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>@Umbraco.Field("pageTitle") | @Umbraco.Field("siteName", recursive: true)</title>
+    <title>@Umbraco.Field("siteName", recursive: true) | @Umbraco.Field("pageTitle")</title>
 
 
     <!-- Facebook and Twitter integration -->
@@ -57,6 +57,8 @@
     @Html.Partial("Header")
 
     @RenderBody()
+    
+    @Html.Partial("Footer")
 </div>
 
 <!-- jQuery -->

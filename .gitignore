@@ -1,2 +1,2 @@
-bin/
-obj/
+MoonLight.Umbraco/bin/*
+MoonLight.Umbraco/obj/*

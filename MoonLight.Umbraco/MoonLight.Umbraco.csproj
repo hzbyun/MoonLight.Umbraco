@@ -336,8 +336,9 @@
     <Content Include="config\Lang\zh-CN.user.xml" />
     <Content Include="default.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="Media\1003\logo-moonlight.jpg" />
-    <Content Include="Media\1003\logo-moonlight_thumb.jpg" />
+    <Content Include="Media\1003\달이의꽃숲.jpeg" />
+    <Content Include="Media\1003\달이의꽃숲_big-thumb.jpeg" />
+    <Content Include="Media\1003\달이의꽃숲_thumb.jpeg" />
     <Content Include="packages.config" />
     <Content Include="config\imageprocessor\security.config" />
     <Content Include="config\imageprocessor\processing.config" />
@@ -380,6 +381,9 @@
     <Content Include="Views\Contact.cshtml" />
     <Content Include="Views\Partials\Header.cshtml" />
     <Content Include="Views\Service.cshtml" />
+    <Content Include="Views\Partials\Footer.cshtml" />
+    <Content Include="Views\Introduction.cshtml" />
+    <Content Include="Views\RegistrationInfo.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
