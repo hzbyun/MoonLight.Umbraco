@@ -1,0 +1,26 @@
+﻿ 2018-10-31 17:44:52,942 [P9384/D2/T179] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username Admin from IP address ::1
+ 2018-10-31 17:44:52,943 [P9384/D2/T179] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: admin logged in from IP address ::1
+ 2018-10-31 17:45:11,442 [P9384/D2/T189] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-10-31 17:45:11,442 [P9384/D2/T189] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-10-31 17:45:11,442 [P9384/D2/T189] INFO  Umbraco.Core.PluginManager - Resolving Umbraco.Web.HealthCheck.HealthCheck
+ 2018-10-31 17:45:11,460 [P9384/D2/T189] INFO  Umbraco.Core.PluginManager - Resolved Umbraco.Web.HealthCheck.HealthCheck (took 17ms)
+ 2018-10-31 17:45:28,233 [P9384/D2/T196] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 17:45:28,362 [P9384/D2/T195] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 18:06:09,148 [P9384/D2/T167] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 18:06:09,190 [P9384/D2/T167] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 18:06:12,041 [P9384/D2/T11] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 18:06:12,058 [P9384/D2/T11] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 18:06:14,973 [P9384/D2/T11] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 18:06:15,000 [P9384/D2/T11] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 18:06:16,120 [P9384/D2/T167] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 18:06:16,553 [P9384/D2/T11] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 18:06:16,729 [P9384/D2/T158] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 18:06:16,769 [P9384/D2/T167] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 18:07:05,189 [P9384/D2/T12] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 18:07:05,819 [P9384/D2/T12] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-10-31 18:20:00,822 [P9384/D2/T193] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.IDiscoverable
+ 2018-10-31 18:20:00,822 [P9384/D2/T193] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.IDiscoverable (took 0ms)
+ 2018-10-31 18:20:00,822 [P9384/D2/T193] INFO  Umbraco.Core.PluginManager - Resolving umbraco.interfaces.ICacheRefresher
+ 2018-10-31 18:20:00,831 [P9384/D2/T193] INFO  Umbraco.Core.PluginManager - Resolved umbraco.interfaces.ICacheRefresher (took 8ms)
+ 2018-10-31 18:53:02,626 [P9384/D2/T148] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-10-30 18:53:02
+ 2018-10-31 19:01:33,351 [P9384/D2/T7] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: Admin, IP Address: ::1
