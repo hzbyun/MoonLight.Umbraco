@@ -1,0 +1,8 @@
+﻿ 2018-11-05 17:25:47,816 [P9384/D2/T31] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username Admin from IP address ::1
+ 2018-11-05 17:25:47,817 [P9384/D2/T31] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: admin logged in from IP address ::1
+ 2018-11-05 18:24:26,612 [P9384/D2/T28] INFO  Umbraco.Core.Logging.OwinLogger - Event Id: 0, state: User logged will be logged out due to timeout: Admin, IP Address: ::1
+ 2018-11-05 18:38:29,613 [P9384/D2/T143] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: Login attempt succeeded for username Admin from IP address ::1
+ 2018-11-05 18:38:29,614 [P9384/D2/T143] INFO  Umbraco.Core.Security.BackOfficeSignInManager - Event Id: 0, state: User: admin logged in from IP address ::1
+ 2018-11-05 18:59:35,917 [P9384/D2/T36] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-11-05 18:59:35,946 [P9384/D2/T36] WARN  Umbraco.Web.Models.Mapping.PreValueDisplayResolver - Could not find persisted pre-value for field maxChars
+ 2018-11-05 19:22:26,244 [P9384/D2/T18] INFO  umbraco.BusinessLogic.Log - Log scrubbed.  Removed all items older than 2018-11-04 19:22:26

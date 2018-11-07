@@ -8,7 +8,7 @@ using  Umbraco.Web;
 using  Umbraco.ModelsBuilder;
 using  Umbraco.ModelsBuilder.Umbraco;
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "8b4c35f5bb11e2ea")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "fd8f01aa4dda063")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -246,6 +246,159 @@ namespace Umbraco.Web.PublishedContentModels
 		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<RegistrationInfo, TValue>> selector)
 		{
 			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+	}
+
+	// Mixin content Type 2076 with alias "articleControls"
+	/// <summary>Article Controls</summary>
+	public partial interface IArticleControls : IPublishedContent
+	{
+		/// <summary>Article Content</summary>
+		IHtmlString ArticleContent { get; }
+
+		/// <summary>Article Image</summary>
+		string ArticleImage { get; }
+
+		/// <summary>Article Intro</summary>
+		string ArticleIntro { get; }
+
+		/// <summary>Article Title</summary>
+		string ArticleTitle { get; }
+	}
+
+	/// <summary>Article Controls</summary>
+	[PublishedContentModel("articleControls")]
+	public partial class ArticleControls : PublishedContentModel, IArticleControls
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "articleControls";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public ArticleControls(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ArticleControls, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Article Content: Article 내용을 적어주세요.
+		///</summary>
+		[ImplementPropertyType("articleContent")]
+		public IHtmlString ArticleContent
+		{
+			get { return GetArticleContent(this); }
+		}
+
+		/// <summary>Static getter for Article Content</summary>
+		public static IHtmlString GetArticleContent(IArticleControls that) { return that.GetPropertyValue<IHtmlString>("articleContent"); }
+
+		///<summary>
+		/// Article Image: Article 이미지를 지정해 주세요.
+		///</summary>
+		[ImplementPropertyType("articleImage")]
+		public string ArticleImage
+		{
+			get { return GetArticleImage(this); }
+		}
+
+		/// <summary>Static getter for Article Image</summary>
+		public static string GetArticleImage(IArticleControls that) { return that.GetPropertyValue<string>("articleImage"); }
+
+		///<summary>
+		/// Article Intro: Article의 간략한 요약을 적어주세요.
+		///</summary>
+		[ImplementPropertyType("articleIntro")]
+		public string ArticleIntro
+		{
+			get { return GetArticleIntro(this); }
+		}
+
+		/// <summary>Static getter for Article Intro</summary>
+		public static string GetArticleIntro(IArticleControls that) { return that.GetPropertyValue<string>("articleIntro"); }
+
+		///<summary>
+		/// Article Title: Article의 제목을 적어주세요.
+		///</summary>
+		[ImplementPropertyType("articleTitle")]
+		public string ArticleTitle
+		{
+			get { return GetArticleTitle(this); }
+		}
+
+		/// <summary>Static getter for Article Title</summary>
+		public static string GetArticleTitle(IArticleControls that) { return that.GetPropertyValue<string>("articleTitle"); }
+	}
+
+	/// <summary>BlogPost</summary>
+	[PublishedContentModel("blogPost")]
+	public partial class BlogPost : Master, IArticleControls
+	{
+#pragma warning disable 0109 // new is redundant
+		public new const string ModelTypeAlias = "blogPost";
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+#pragma warning restore 0109
+
+		public BlogPost(IPublishedContent content)
+			: base(content)
+		{ }
+
+#pragma warning disable 0109 // new is redundant
+		public new static PublishedContentType GetModelContentType()
+		{
+			return PublishedContentType.Get(ModelItemType, ModelTypeAlias);
+		}
+#pragma warning restore 0109
+
+		public static PublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<BlogPost, TValue>> selector)
+		{
+			return PublishedContentModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+		}
+
+		///<summary>
+		/// Article Content: Article 내용을 적어주세요.
+		///</summary>
+		[ImplementPropertyType("articleContent")]
+		public IHtmlString ArticleContent
+		{
+			get { return Umbraco.Web.PublishedContentModels.ArticleControls.GetArticleContent(this); }
+		}
+
+		///<summary>
+		/// Article Image: Article 이미지를 지정해 주세요.
+		///</summary>
+		[ImplementPropertyType("articleImage")]
+		public string ArticleImage
+		{
+			get { return Umbraco.Web.PublishedContentModels.ArticleControls.GetArticleImage(this); }
+		}
+
+		///<summary>
+		/// Article Intro: Article의 간략한 요약을 적어주세요.
+		///</summary>
+		[ImplementPropertyType("articleIntro")]
+		public string ArticleIntro
+		{
+			get { return Umbraco.Web.PublishedContentModels.ArticleControls.GetArticleIntro(this); }
+		}
+
+		///<summary>
+		/// Article Title: Article의 제목을 적어주세요.
+		///</summary>
+		[ImplementPropertyType("articleTitle")]
+		public string ArticleTitle
+		{
+			get { return Umbraco.Web.PublishedContentModels.ArticleControls.GetArticleTitle(this); }
 		}
 	}
 

@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.BlogPost>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<div id="fh5co-main-services-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+                <h2>@Umbraco.Field("articleTitle")</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="row">
+				<div class="col-md-12">
+					<div class="about-inner">
+					    <div class="col-md-4">
+							<a href="#" class="featured-grid" style="background-image: url(@Umbraco.Field("articleImage"));">
+                                <div class="desc">
+                                    <h3>사진 B</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+						@Umbraco.Field("articleContent")
+						</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </div>
+</div>

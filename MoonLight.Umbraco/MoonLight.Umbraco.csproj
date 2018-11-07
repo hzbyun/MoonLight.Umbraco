@@ -384,6 +384,7 @@
     <Content Include="Views\Partials\Footer.cshtml" />
     <Content Include="Views\Introduction.cshtml" />
     <Content Include="Views\RegistrationInfo.cshtml" />
+    <Content Include="Views\BlogPost.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
